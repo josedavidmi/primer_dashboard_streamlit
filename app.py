@@ -4,8 +4,8 @@ import plotly.express as px
 st.title("Dashboard de Ventas") 
 # Sidebar 
 with st.sidebar: 
-st.header("Filtros") 
-year = st.selectbox("Año", [2022, 2023, 2024])
+    st.header("Filtros") 
+    year = st.selectbox("Año", [2022, 2023, 2024])
 # Datos de ejemplo 
 df = pd.DataFrame({ 
 "Año": [2022, 2022, 2023, 2023, 2024, 2024], 
