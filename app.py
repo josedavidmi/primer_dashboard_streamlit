@@ -16,8 +16,7 @@ df_filtrado = df[df["Año"] == year]
 # Métricas 
 st.metric("Ventas totales", f"{df_filtrado['Ventas'].sum()} €") 
 # Gráfico 
-fig = px.bar(df_filtrado, x="Mes", y="Ventas", title="Ventas por 
-mes") 
+fig = px.bar(df_filtrado, x="Mes", y="Ventas", title="Ventas por mes") 
 st.plotly_chart(fig) 
 # Tabla 
 st.dataframe(df_filtrado) 
